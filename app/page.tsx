@@ -71,6 +71,7 @@ const translations: Translations = {
         myDetails: "My Details",
         previousOrders: "Previous Orders",
         categories: "Categories",
+        language: "Language",
         clear: "Clear",
         whereAreYouShopping: "Where are you shopping?",
         setLocationMessage: "Set your location to find deals near you.",
@@ -134,6 +135,7 @@ const translations: Translations = {
         myDetails: "Mes détails",
         previousOrders: "Commandes précédentes",
         categories: "Catégories",
+        language: "Langue",
         clear: "Effacer",
         whereAreYouShopping: "Où faites-vous vos achats ?",
         setLocationMessage: "Définissez votre emplacement pour trouver des offres près de chez vous.",
@@ -197,6 +199,7 @@ const translations: Translations = {
         myDetails: "Mis detalles",
         previousOrders: "Pedidos anteriores",
         categories: "Categorías",
+        language: "Idioma",
         clear: "Borrar",
         whereAreYouShopping: "¿Dónde estás comprando?",
         setLocationMessage: "Establece tu ubicación para encontrar ofertas cerca de ti.",
@@ -1908,6 +1911,18 @@ export default function ShopPage() {
             {/* Mobile Categories Sidebar - opens from left */}
             <Drawer title={t('menu')} isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} side="left">
                 <div className="space-y-4">
+                     {/* Language Picker for Mobile */}
+                     <div className="pb-3 border-b border-slate-200">
+                         <h3 className="font-bold mb-2">{t('language')}</h3>
+                         <LanguagePicker
+                             locale={locale}
+                             onChange={(l) => {
+                                 setLocale(l);
+                                 localStorage.setItem("locale", l);
+                             }}
+                             variant="dark"
+                         />
+                     </div>
                      <h3 className="font-bold">{t('categories')}</h3>
                      <div className="space-y-1">
                         {categories.map(cat => (

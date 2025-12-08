@@ -308,6 +308,11 @@ const ZonesAdminPage = () => {
     google.maps.event.addListener(path, "insert_at", () => {
       onEdit();
     });
+    
+    // When a vertex is removed
+    google.maps.event.addListener(path, "remove_at", () => {
+      onEdit();
+    });
   }, [onEdit]);
 
   const onMapLoad = useCallback((map: google.maps.Map) => {
