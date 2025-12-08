@@ -1,0 +1,311 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model user {
+  id            String    @id @default(cuid())
+  name          String?
+  firstName     String?
+  lastName      String?
+  email         String?   @unique(map: "User_email_key")
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  role          String    @default("user")
+  isAdmin       Boolean   @default(false)
+  country       String?
+  state         String?
+  city          String?
+  address       String?
+  postalCode    String?
+  latitude      Float?
+  longitude     Float?
+  zoneId        String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  zone          zone?     @relation(fields: [zoneId], references: [id], onDelete: SetNull)
+  accounts      account[]
+  sessions      session[]
+  carts         shoppingcart[]
+  orders        order[]
+  emailVerificationTokens emailverificationtoken[]
+  passwordResetTokens     passwordresettoken[]
+}
+
+model account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String? @db.Text
+  access_token       String? @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String? @db.Text
+  session_state      String?
+
+  user user @relation(fields: [userId], references: [id], onDelete: Cascade, map: "Account_userId_fkey")
+
+  @@unique([provider, providerAccountId], map: "Account_provider_providerAccountId_key")
+  @@index([userId], map: "Account_userId_fkey")
+}
+
+model session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique(map: "Session_sessionToken_key")
+  userId       String
+  expires      DateTime
+  user         user     @relation(fields: [userId], references: [id], onDelete: Cascade, map: "Session_userId_fkey")
+
+  @@index([userId], map: "Session_userId_fkey")
+}
+
+model verificationtoken {
+  identifier String
+  token      String   @unique(map: "VerificationToken_token_key")
+  expires    DateTime
+
+  @@unique([identifier, token], map: "VerificationToken_identifier_token_key")
+}
+
+model emailverificationtoken {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expires   DateTime
+  createdAt DateTime @default(now())
+
+  user user @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model passwordresettoken {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  code      String
+  expires   DateTime
+  createdAt DateTime @default(now())
+
+  user user @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model email {
+  id      String   @id @default(cuid())
+  subject String
+  body    String   @db.Text
+  from    String
+  to      String
+  isHtml  Boolean  @default(true)
+  sentAt  DateTime @default(now())
+}
+
+model store {
+  id          String   @id @default(cuid())
+  name        String
+  nameTranslations Json @default("{}")
+  shortDescriptionTranslations Json @default("{}")
+  descriptionTranslations Json @default("{}")
+  description String?  @db.Text
+  imageUrl    String?
+  latitude    Float
+  longitude   Float
+  address     String?
+  city        String?
+  state       String?
+  country     String?
+  postalCode  String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  products    storeproduct[]
+  zonestores  zonestore[]
+  // Direct products relation if a product belongs to a specific store exclusively (as requested: "all products need to be linked to a store")
+  ownedProducts product[]
+}
+
+model category {
+  id               String     @id @default(cuid())
+  nameTranslations Json       @default("{}")
+  parentId         String?
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime   @updatedAt
+
+  parent      category?  @relation("CategoryToCategory", fields: [parentId], references: [id], onDelete: SetNull)
+  children    category[] @relation("CategoryToCategory")
+  products    product[]
+  
+  @@index([parentId])
+}
+
+model zone {
+  id               String      @id @default(cuid())
+  name             String
+  nameTranslations Json        @default("{}")
+  coordinates      Json        @default("[]") // Array of {lat, lng} points forming a polygon
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+
+  stores      zonestore[]
+  users       user[]
+  carts       shoppingcart[]
+  orders      order[]
+}
+
+model zonestore {
+  id        String   @id @default(cuid())
+  zoneId    String
+  storeId   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  zone      zone     @relation(fields: [zoneId], references: [id], onDelete: Cascade)
+  store     store    @relation(fields: [storeId], references: [id], onDelete: Cascade)
+
+  @@unique([zoneId, storeId])
+  @@index([zoneId])
+  @@index([storeId])
+}
+
+model product {
+  id               String             @id @default(cuid())
+  name             String
+  nameTranslations Json @default("{}")
+  shortDescriptionTranslations Json @default("{}")
+  descriptionTranslations Json @default("{}")
+  description      String?            @db.Text
+  categoryId       String
+  storeId          String             // Main store it belongs to (owner)
+  imageUrl         String?
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+
+  category         category           @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  store            store              @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  
+  stores           storeproduct[]     // Offers from different stores (if keeping multi-store pricing for same product concept, or maybe just self-reference if storeId implies the only seller)
+  // Assuming "all products need to be linked to a store" means ownership or origin. 
+  // If multiple stores sell the "same" abstract product, we usually keep the Product entity abstract. 
+  // However, the prompt says "all products need to be linked to a store". 
+  // If it means unique items per store, then Product table should just have price and storeId.
+  // But we have StoreProduct for pricing. Let's keep StoreProduct for flexible pricing/availability 
+  // but link Product to a "Brand" or "Primary Store" or just require it to have a creator store.
+  
+  cartItems        shoppingcartitem[]
+  orderItems       orderitem[]
+  
+  @@index([categoryId])
+  @@index([storeId])
+}
+
+model storeproduct {
+  id        String   @id @default(cuid())
+  storeId   String
+  productId String
+  price     Decimal  @db.Decimal(10, 2)
+  stock     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  store     store    @relation(fields: [storeId], references: [id], onDelete: Cascade, map: "StoreProduct_storeId_fkey")
+  product   product  @relation(fields: [productId], references: [id], onDelete: Cascade, map: "StoreProduct_productId_fkey")
+  cartItems shoppingcartitem[] @relation("CartItemStoreProduct")
+
+  @@unique([storeId, productId], map: "StoreProduct_storeId_productId_key")
+  @@index([productId], map: "StoreProduct_productId_fkey")
+}
+
+model shoppingcart {
+  id           String    @id @default(cuid())
+  userId       String?
+  status       String    @default("shopping")
+  country      String?
+  state        String?
+  city         String?
+  address      String?
+  postalCode   String?
+  latitude     Float?
+  longitude    Float?
+  zoneId       String?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  user         user?     @relation(fields: [userId], references: [id], onDelete: Cascade, map: "ShoppingCart_userId_fkey")
+  zone         zone?     @relation(fields: [zoneId], references: [id], onDelete: SetNull)
+  items        shoppingcartitem[]
+
+  @@index([userId], map: "ShoppingCart_userId_fkey")
+  @@index([zoneId])
+}
+
+model shoppingcartitem {
+  id             String       @id @default(cuid())
+  cartId         String
+  productId      String
+  storeProductId String
+  quantity       Int          @default(1)
+  price          Decimal      @db.Decimal(10, 2)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  cart           shoppingcart @relation(fields: [cartId], references: [id], onDelete: Cascade, map: "ShoppingCartItem_cartId_fkey")
+  product        product      @relation(fields: [productId], references: [id], onDelete: Cascade, map: "ShoppingCartItem_productId_fkey")
+  storeProduct   storeproduct @relation("CartItemStoreProduct", fields: [storeProductId], references: [id], onDelete: Cascade, map: "ShoppingCartItem_storeProductId_fkey")
+
+  @@index([cartId], map: "ShoppingCartItem_cartId_fkey")
+  @@index([productId], map: "ShoppingCartItem_productId_fkey")
+  @@index([storeProductId], map: "ShoppingCartItem_storeProductId_fkey")
+}
+
+model order {
+  id                String      @id @default(cuid())
+  orderNumber       String      @unique
+  paymentCode       String?
+  userId            String?
+  subtotal          Decimal     @db.Decimal(10, 2) @default(0)
+  gst               Decimal     @db.Decimal(10, 2) @default(0)
+  qst               Decimal     @db.Decimal(10, 2) @default(0)
+  total             Decimal     @db.Decimal(10, 2)
+  status            String      @default("pending_payment") // pending_payment, paid, processing, shipped, delivered, cancelled
+  shippingAddress   String?
+  shippingCity      String?
+  shippingState     String?
+  shippingPostalCode String?
+  shippingCountry   String?
+  zoneId            String?
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  user              user?       @relation(fields: [userId], references: [id], onDelete: Cascade, map: "Order_userId_fkey")
+  zone              zone?       @relation(fields: [zoneId], references: [id], map: "Order_zoneId_fkey")
+  items             orderitem[]
+
+  @@index([userId], map: "Order_userId_fkey")
+  @@index([zoneId], map: "Order_zoneId_fkey")
+}
+
+model orderitem {
+  id        String  @id @default(cuid())
+  orderId   String
+  productId String
+  quantity  Int
+  price     Decimal @db.Decimal(10, 2)
+  storeName String?
+
+  order     order   @relation(fields: [orderId], references: [id], onDelete: Cascade, map: "OrderItem_orderId_fkey")
+  product   product @relation(fields: [productId], references: [id], onDelete: Cascade, map: "OrderItem_productId_fkey")
+
+  @@index([orderId], map: "OrderItem_orderId_fkey")
+  @@index([productId], map: "OrderItem_productId_fkey")
+}
