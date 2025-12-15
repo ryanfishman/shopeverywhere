@@ -32,3 +32,5 @@ export const createBlankProductEditor = (categoryId: string) => ({
   price: "0",
 });
 
+
+

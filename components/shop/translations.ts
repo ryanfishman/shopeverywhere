@@ -206,3 +206,5 @@ export const translations: Translations = {
 export const createTranslator = (locale: string) => (key: string) =>
   translations[locale]?.[key] || translations['en'][key] || key;
 
+
+

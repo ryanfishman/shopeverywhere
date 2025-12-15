@@ -217,6 +217,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Product not found" }, { status: 404 });
   }
 
+  // Validate that product hasn't expired (validUntil must be greater than current date)
+  const now = new Date();
+  if (product.validUntil && product.validUntil <= now) {
+    return NextResponse.json({ error: "This product is no longer available" }, { status: 400 });
+  }
+
   const price = product.stores[0]?.price || 0;
   const storeProductId = product.stores[0]?.id || "";
 

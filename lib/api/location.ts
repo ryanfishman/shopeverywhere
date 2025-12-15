@@ -225,3 +225,5 @@ export function loadCartIdFromStorage(): string | null {
   return localStorage.getItem("se_cart_id");
 }
 
+
+

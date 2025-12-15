@@ -1,0 +1,79 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Maxi Scraper",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "args": [
+        "${workspaceFolder}/scripts/scrape-maxi.ts",
+        "--categories-only"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/scripts/tsconfig.json"
+      }
+    },
+    {
+      "name": "Debug Maxi Scraper (Full)",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "args": [
+        "${workspaceFolder}/scripts/scrape-maxi.ts",
+        "--max=5"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/scripts/tsconfig.json"
+      }
+    },
+    {
+      "name": "Debug Maxi Scraper (Custom)",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "-r",
+        "ts-node/register"
+      ],
+      "args": [
+        "${workspaceFolder}/scripts/scrape-maxi.ts",
+        "${input:scraperArgs}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/scripts/tsconfig.json"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "scraperArgs",
+      "type": "promptString",
+      "description": "Arguments for scraper (e.g., --max=10, --categories-only)",
+      "default": "--max=5"
+    }
+  ]
+}

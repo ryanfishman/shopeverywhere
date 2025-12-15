@@ -52,7 +52,14 @@ export async function GET(req: Request) {
       }
   }
 
+  // Get current date for validUntil filter - only show products that haven't expired
+  const now = new Date();
+
   const whereClause: any = {
+      // Filter out expired products - validUntil must be greater than current date
+      validUntil: {
+          gt: now
+      },
       // Products must be sold by stores in the zone.
       // The Product table has a `storeId` (owner). 
       // AND we have `StoreProduct` (offers).

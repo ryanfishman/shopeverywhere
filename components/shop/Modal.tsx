@@ -29,3 +29,5 @@ export const Modal = ({ title, children, onClose }: ModalProps) => (
   </div>
 );
 
+
+

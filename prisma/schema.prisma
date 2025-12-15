@@ -188,6 +188,7 @@ model product {
   categoryId       String
   storeId          String             // Main store it belongs to (owner)
   imageUrl         String?
+  validUntil       DateTime           @default(dbgenerated("'2025-12-22 00:00:00'")) // Products valid until this date
   createdAt        DateTime           @default(now())
   updatedAt        DateTime           @updatedAt
 

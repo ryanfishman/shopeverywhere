@@ -86,6 +86,10 @@ const translations = {
         quantity: "Qty",
         items: "items",
         item: "item",
+        expiredItemsWarning: "Items No Longer Available",
+        expiredItemsMessage: "The following items have expired and were removed from your cart:",
+        continueWithRemaining: "Continue with remaining items",
+        expiredItemsRemoved: "Expired items have been removed from your cart.",
     },
     fr: {
         checkout: "Paiement",
@@ -127,6 +131,10 @@ const translations = {
         quantity: "Qté",
         items: "articles",
         item: "article",
+        expiredItemsWarning: "Articles plus disponibles",
+        expiredItemsMessage: "Les articles suivants ont expiré et ont été retirés de votre panier:",
+        continueWithRemaining: "Continuer avec les articles restants",
+        expiredItemsRemoved: "Les articles expirés ont été retirés de votre panier.",
     },
     es: {
         checkout: "Pagar",
@@ -168,6 +176,10 @@ const translations = {
         quantity: "Cant",
         items: "artículos",
         item: "artículo",
+        expiredItemsWarning: "Artículos ya no disponibles",
+        expiredItemsMessage: "Los siguientes artículos han expirado y fueron eliminados de su carrito:",
+        continueWithRemaining: "Continuar con los artículos restantes",
+        expiredItemsRemoved: "Los artículos expirados han sido eliminados de su carrito.",
     },
 };
 
@@ -212,6 +224,10 @@ export default function CheckoutPage() {
     const [showZoneWarning, setShowZoneWarning] = useState(false);
     const [pendingNewZone, setPendingNewZone] = useState<{ location: LocationDetails; zone: ZoneInfo } | null>(null);
     const [removedItemsCount, setRemovedItemsCount] = useState(0);
+    
+    // Expired items warning
+    const [showExpiredItemsWarning, setShowExpiredItemsWarning] = useState(false);
+    const [expiredItems, setExpiredItems] = useState<{ id: string; name: string; quantity: number }[]>([]);
     
     // Payment
     const [orderCode, setOrderCode] = useState("");
@@ -351,48 +367,82 @@ export default function CheckoutPage() {
     const handleConfirmOrder = async () => {
         setLoading(true);
         try {
-            const code = generateOrderCode();
-            const number = generateOrderNumber();
-            setOrderCode(code);
-            setOrderNumber(number);
-
-            // Create order in database
-            const orderData = {
-                orderNumber: number,
-                paymentCode: code,
-                items: cartItems.map(item => ({
-                    productId: item.product.id,
-                    quantity: item.quantity,
-                    price: item.product.minPrice,
-                })),
-                subtotal,
-                gst,
-                qst,
-                total,
-                shippingAddress: addressDetails,
-                zoneId: zoneInfo?.zoneId,
-            };
-
-            const res = await fetch("/api/orders", {
+            // Call the checkout API which validates AND creates the order
+            const checkoutRes = await fetch("/api/checkout", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(orderData),
             });
 
-            if (res.ok) {
-                setStep("pending");
-                // Clear cart from localStorage
-                localStorage.removeItem("se_checkout_cart");
-            } else {
-                const data = await res.json();
-                alert(data.error || "Failed to create order");
+            if (checkoutRes.status === 409) {
+                // Items were removed (expired or zone issue)
+                const checkoutData = await checkoutRes.json();
+                
+                if (checkoutData.expiredItems && checkoutData.expiredItems.length > 0) {
+                    // Show expired items warning modal
+                    setExpiredItems(checkoutData.expiredItems);
+                    setShowExpiredItemsWarning(true);
+                    
+                    // Remove expired items from local cart state
+                    const expiredIds = new Set(checkoutData.expiredItems.map((item: { id: string }) => item.id));
+                    setCartItems(prev => prev.filter(item => !expiredIds.has(item.product.id)));
+                    
+                    // Update localStorage
+                    const updatedCart = cartItems.filter(item => !expiredIds.has(item.product.id));
+                    localStorage.setItem("se_checkout_cart", JSON.stringify(updatedCart));
+                    
+                    setLoading(false);
+                    return;
+                } else {
+                    // Zone-related removal
+                    alert(checkoutData.error || "Some items were removed from your cart.");
+                    // Refresh the page to reload cart
+                    window.location.reload();
+                    return;
+                }
             }
+
+            if (!checkoutRes.ok) {
+                const checkoutData = await checkoutRes.json();
+                alert(checkoutData.error || "Checkout failed");
+                setLoading(false);
+                return;
+            }
+
+            // Order created successfully - get order details from response
+            const orderData = await checkoutRes.json();
+            setOrderCode(orderData.paymentCode);
+            setOrderNumber(orderData.orderNumber);
+            
+            setStep("pending");
+            // Clear cart from localStorage
+            localStorage.removeItem("se_checkout_cart");
         } catch (error) {
             console.error(error);
             alert("Failed to create order");
         } finally {
             setLoading(false);
         }
+    };
+
+    // Handle continuing checkout after expired items were removed
+    const handleContinueAfterExpiredItems = () => {
+        setShowExpiredItemsWarning(false);
+        setExpiredItems([]);
+        
+        // If cart is now empty, redirect to shopping
+        if (cartItems.length === 0) {
+            router.push("/");
+            return;
+        }
+        
+        // Otherwise, retry the checkout (which will loop if more items expired)
+        handleConfirmOrder();
+    };
+
+    // Handle canceling after expired items warning
+    const handleCancelAfterExpiredItems = () => {
+        setShowExpiredItemsWarning(false);
+        setExpiredItems([]);
     };
 
     const handleCancelOrder = async () => {
@@ -755,6 +805,61 @@ export default function CheckoutPage() {
                                 {loading ? t("loading") : t("proceed")}
                             </button>
                         </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Expired Items Warning Modal */}
+            {showExpiredItemsWarning && (
+                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+                    <div className="bg-white rounded-lg w-full max-w-md p-6">
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                                <AlertTriangle className="text-orange-600" size={20} />
+                            </div>
+                            <h2 className="text-lg font-bold">{t("expiredItemsWarning")}</h2>
+                        </div>
+                        <p className="text-gray-600 mb-4">{t("expiredItemsMessage")}</p>
+                        
+                        {/* List of expired items */}
+                        <div className="bg-gray-50 rounded-lg p-4 mb-6 max-h-48 overflow-y-auto">
+                            <ul className="space-y-2">
+                                {expiredItems.map((item) => (
+                                    <li key={item.id} className="flex justify-between items-center text-sm">
+                                        <span className="font-medium text-gray-800">{item.name}</span>
+                                        <span className="text-gray-500">{t("quantity")}: {item.quantity}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        
+                        {cartItems.length > 0 ? (
+                            <div className="flex gap-3">
+                                <button
+                                    onClick={handleCancelAfterExpiredItems}
+                                    className="flex-1 py-2 border rounded-lg hover:bg-gray-50"
+                                >
+                                    {t("cancel")}
+                                </button>
+                                <button
+                                    onClick={handleContinueAfterExpiredItems}
+                                    disabled={loading}
+                                    className="flex-1 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 disabled:opacity-50"
+                                >
+                                    {loading ? t("loading") : t("continueWithRemaining")}
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="text-center">
+                                <p className="text-gray-600 mb-4">{t("emptyCart")}</p>
+                                <Link
+                                    href="/"
+                                    className="inline-block px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+                                >
+                                    {t("goShopping")}
+                                </Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             )}

@@ -1,0 +1,1489 @@
+{
+  "categories": [
+    {
+      "name": "Fruits & Vegetables",
+      "nameTranslations": {
+        "en": "Fruits & Vegetables",
+        "fr": "Fruits & Vegetables"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Fresh Vegetables",
+          "nameTranslations": {
+            "en": "Fresh Vegetables",
+            "fr": "Fresh Vegetables"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/fresh-vegetables/c/28195?navid=flyout-L3-Fresh-Vegetables",
+          "children": []
+        },
+        {
+          "name": "Fresh Fruits",
+          "nameTranslations": {
+            "en": "Fresh Fruits",
+            "fr": "Fresh Fruits"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/fresh-fruits/c/28194?navid=flyout-L3-Fresh-Fruits",
+          "children": []
+        },
+        {
+          "name": "Packaged Salads & Dressing",
+          "nameTranslations": {
+            "en": "Packaged Salads & Dressing",
+            "fr": "Packaged Salads & Dressing"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/packaged-salad-dressing/c/28196?navid=flyout-L3-packaged-salad-and-dressing",
+          "children": []
+        },
+        {
+          "name": "Herbs",
+          "nameTranslations": {
+            "en": "Herbs",
+            "fr": "Herbs"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/herbs/c/28197?navid=flyout-L3-Herbs",
+          "children": []
+        },
+        {
+          "name": "Fresh Cut Fruits & Vegetables",
+          "nameTranslations": {
+            "en": "Fresh Cut Fruits & Vegetables",
+            "fr": "Fresh Cut Fruits & Vegetables"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/fresh-cut-fruits-vegetables/c/28198?navid=flyout-L3-Fresh-Cut-Fruits-and-Vegetables",
+          "children": []
+        },
+        {
+          "name": "Dried Fruits & Nuts",
+          "nameTranslations": {
+            "en": "Dried Fruits & Nuts",
+            "fr": "Dried Fruits & Nuts"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/dried-fruits-nuts/c/28199?navid=flyout-L3-Dried-Fruits-and-Nuts",
+          "children": []
+        },
+        {
+          "name": "Fresh Juice & Smoothies",
+          "nameTranslations": {
+            "en": "Fresh Juice & Smoothies",
+            "fr": "Fresh Juice & Smoothies"
+          },
+          "url": "https://www.maxi.ca/en/food/fruits-vegetables/fresh-juice-smoothies/c/28200?navid=flyout-L3-Fresh-Juice-and-Smoothies",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Dairy & Eggs",
+      "nameTranslations": {
+        "en": "Dairy & Eggs",
+        "fr": "Dairy & Eggs"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Milk & Cream",
+          "nameTranslations": {
+            "en": "Milk & Cream",
+            "fr": "Milk & Cream"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/milk-cream/c/28224?navid=flyout-L3-Milk-and-Cream",
+          "children": []
+        },
+        {
+          "name": "Egg & Egg Substitutes",
+          "nameTranslations": {
+            "en": "Egg & Egg Substitutes",
+            "fr": "Egg & Egg Substitutes"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/egg-egg-substitutes/c/28222?navid=flyout-L3-Egg-and-Egg-Substitutes",
+          "children": []
+        },
+        {
+          "name": "Butter & Spreads",
+          "nameTranslations": {
+            "en": "Butter & Spreads",
+            "fr": "Butter & Spreads"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/butter-spreads/c/28220?navid=flyout-L3-Butter-and-Spreads",
+          "children": []
+        },
+        {
+          "name": "Cheese",
+          "nameTranslations": {
+            "en": "Cheese",
+            "fr": "Cheese"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/cheese/c/28225?navid=flyout-L3-Cheese",
+          "children": []
+        },
+        {
+          "name": "Yogurt",
+          "nameTranslations": {
+            "en": "Yogurt",
+            "fr": "Yogurt"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/yogurt/c/28227?navid=flyout-L3-Yogurt",
+          "children": []
+        },
+        {
+          "name": "Desserts & Doughs",
+          "nameTranslations": {
+            "en": "Desserts & Doughs",
+            "fr": "Desserts & Doughs"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/desserts-doughs/c/28221?navid=flyout-L3-Desserts-and-Doughs",
+          "children": []
+        },
+        {
+          "name": "Sour Cream & Dips",
+          "nameTranslations": {
+            "en": "Sour Cream & Dips",
+            "fr": "Sour Cream & Dips"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/sour-cream-dips/c/28226?navid=flyout-L3-Sour-Cream-and-Dips",
+          "children": []
+        },
+        {
+          "name": "Lactose Free",
+          "nameTranslations": {
+            "en": "Lactose Free",
+            "fr": "Lactose Free"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/lactose-free/c/28223?navid=flyout-L3-Lactose-Free",
+          "children": []
+        },
+        {
+          "name": "Non-Dairy Milk Alternatives",
+          "nameTranslations": {
+            "en": "Non-Dairy Milk Alternatives",
+            "fr": "Non-Dairy Milk Alternatives"
+          },
+          "url": "https://www.maxi.ca/en/food/dairy-eggs/non-dairy-milk-alternatives/c/58904?navid=flyout-L3-Food-DairyandEggs-Non-DairyMilkAlternatives",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Pantry",
+      "nameTranslations": {
+        "en": "Pantry",
+        "fr": "Pantry"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Canned & Pickled",
+          "nameTranslations": {
+            "en": "Canned & Pickled",
+            "fr": "Canned & Pickled"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/canned-pickled-/c/28187?navid=flyout-L3-Pantry-Canned-and-Pickled",
+          "children": []
+        },
+        {
+          "name": "Baking Essentials",
+          "nameTranslations": {
+            "en": "Baking Essentials",
+            "fr": "Baking Essentials"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/baking-essentials/c/28186?navid=flyout-L3-Pantry-Baking-Essentials",
+          "children": []
+        },
+        {
+          "name": "Pasta & Pasta Sauce",
+          "nameTranslations": {
+            "en": "Pasta & Pasta Sauce",
+            "fr": "Pasta & Pasta Sauce"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/pasta-pasta-sauce/c/28247?navid=flyout-L3-Pantry-Pasta-and-Pasta-Sauce",
+          "children": []
+        },
+        {
+          "name": "Easy Meals & Sides",
+          "nameTranslations": {
+            "en": "Easy Meals & Sides",
+            "fr": "Easy Meals & Sides"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/easy-meals-sides/c/28246?navid=flyout-L3-Pantry-Easy-Meals-and-Sides",
+          "children": []
+        },
+        {
+          "name": "Cereal & Breakfast",
+          "nameTranslations": {
+            "en": "Cereal & Breakfast",
+            "fr": "Cereal & Breakfast"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/cereal-breakfast/c/28183?navid=flyout-L3-Pantry-Cereal-and-Breakfast",
+          "children": []
+        },
+        {
+          "name": "Honey, Syrups & Spreads",
+          "nameTranslations": {
+            "en": "Honey, Syrups & Spreads",
+            "fr": "Honey, Syrups & Spreads"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/honey-syrups-spreads/c/28184?navid=flyout-L3-Pantry-Honey-Syrups-and-Spreads",
+          "children": []
+        },
+        {
+          "name": "Rice",
+          "nameTranslations": {
+            "en": "Rice",
+            "fr": "Rice"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/rice/c/28248?navid=flyout-L3-Pantry-Rice",
+          "children": []
+        },
+        {
+          "name": "Oils & Vinegar",
+          "nameTranslations": {
+            "en": "Oils & Vinegar",
+            "fr": "Oils & Vinegar"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/oils-vinegar/c/28244?navid=flyout-L3-Pantry-Oils-and-Vinegar",
+          "children": []
+        },
+        {
+          "name": "Condiments",
+          "nameTranslations": {
+            "en": "Condiments",
+            "fr": "Condiments"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/condiments/c/28243?navid=flyout-L3-Pantry-Condiments",
+          "children": []
+        },
+        {
+          "name": "Spices & Seasonings",
+          "nameTranslations": {
+            "en": "Spices & Seasonings",
+            "fr": "Spices & Seasonings"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/spices-seasonings/c/28188?navid=flyout-L3-Pantry-Spices-and-Seasonings",
+          "children": []
+        },
+        {
+          "name": "Dried Beans, Vegetables & Grains",
+          "nameTranslations": {
+            "en": "Dried Beans, Vegetables & Grains",
+            "fr": "Dried Beans, Vegetables & Grains"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/dried-beans-vegetables-grains/c/28185?navid=flyout-L3-Pantry-Dried-Beans-Vegetables-and-Grains",
+          "children": []
+        },
+        {
+          "name": "Bulk Nuts and Candy",
+          "nameTranslations": {
+            "en": "Bulk Nuts and Candy",
+            "fr": "Bulk Nuts and Candy"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/bulk/c/57088?navid=flyout-L3-Pantry-Bulk",
+          "children": []
+        },
+        {
+          "name": "International Foods",
+          "nameTranslations": {
+            "en": "International Foods",
+            "fr": "International Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/international-foods/c/28245?navid=flyout-L3-Pantry-International-Foods",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "International Foods",
+      "nameTranslations": {
+        "en": "International Foods",
+        "fr": "International Foods"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "East Asian Foods",
+          "nameTranslations": {
+            "en": "East Asian Foods",
+            "fr": "East Asian Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/east-asian-foods/c/58466?navid=flyout-L3-InternationalFood-East-Asian-Foods",
+          "children": []
+        },
+        {
+          "name": "Rice & Grain",
+          "nameTranslations": {
+            "en": "Rice & Grain",
+            "fr": "Rice & Grain"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/east-asian-foods/rice-grain/c/58467?navid=flyout-L3-InternatioalFood-EastAsian-Rice-Grain",
+          "children": []
+        },
+        {
+          "name": "Noodles & Noodle Soup",
+          "nameTranslations": {
+            "en": "Noodles & Noodle Soup",
+            "fr": "Noodles & Noodle Soup"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/east-asian-foods/noodles-noodle-soup/c/58468?navid=flyout-L3-InternationalFoods-EastAsian-NoodlesandNoodle-Soup",
+          "children": []
+        },
+        {
+          "name": "Snacks, Cookies & Crackers",
+          "nameTranslations": {
+            "en": "Snacks, Cookies & Crackers",
+            "fr": "Snacks, Cookies & Crackers"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/east-asian-foods/snacks-cookies-crackers/c/58469?navid=flyout-L3-InternationalFood-EastAsian-SnacksCookiesCrackers",
+          "children": []
+        },
+        {
+          "name": "Condiments, Sauces & Oil",
+          "nameTranslations": {
+            "en": "Condiments, Sauces & Oil",
+            "fr": "Condiments, Sauces & Oil"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/east-asian-foods/condiments-sauces-oil/c/58472?navid=flyout-L3-InternationalFoods-EastAsianFoods-CondimentsSaucesOil",
+          "children": []
+        },
+        {
+          "name": "Shop More East Asian Foods",
+          "nameTranslations": {
+            "en": "Shop More East Asian Foods",
+            "fr": "Shop More East Asian Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/east-asian-foods/c/58466?navid=flyout-L3-InternationalFood-EastAsian-ShopMore",
+          "children": []
+        },
+        {
+          "name": "South Asian Foods",
+          "nameTranslations": {
+            "en": "South Asian Foods",
+            "fr": "South Asian Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/south-asian-foods/c/58045?navid=flyout-L3-South-Asian-Foods",
+          "children": []
+        },
+        {
+          "name": "Rice, Lentils & Beans",
+          "nameTranslations": {
+            "en": "Rice, Lentils & Beans",
+            "fr": "Rice, Lentils & Beans"
+          },
+          "url": "https://www.maxi.ca/en/food/international-food/south-asian-food/rice-lentils-beans/c/58046?navid=flyout-L3-InternationalFood-SouthAsian-RiceLentilsBeans",
+          "children": []
+        },
+        {
+          "name": "Snacks, Cookies & Crackers",
+          "nameTranslations": {
+            "en": "Snacks, Cookies & Crackers",
+            "fr": "Snacks, Cookies & Crackers"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/south-asian-foods/snacks-cookies-crackers/c/58309?navid=flyout-L3-InternationalFood-SouthAsian-SnacksCookiesCrackers",
+          "children": []
+        },
+        {
+          "name": "Bakery",
+          "nameTranslations": {
+            "en": "Bakery",
+            "fr": "Bakery"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/south-asian-foods/bakery/c/58318?navid=flyout-L3-InternationalFoods-SouthAsian-Bakery",
+          "children": []
+        },
+        {
+          "name": "Spices & Seasonings",
+          "nameTranslations": {
+            "en": "Spices & Seasonings",
+            "fr": "Spices & Seasonings"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/south-asian-foods/spices-seasonings/c/58311?navid=flyout-L3-InternationalFoods-SouthAsian-SpicesSeasonings",
+          "children": []
+        },
+        {
+          "name": "Shop More South Asian Foods",
+          "nameTranslations": {
+            "en": "Shop More South Asian Foods",
+            "fr": "Shop More South Asian Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/south-asian-foods/c/58045?navid=flyout-L3-InternationalFoods-SouthAsian-ShopMore",
+          "children": []
+        },
+        {
+          "name": "Caribbean Foods",
+          "nameTranslations": {
+            "en": "Caribbean Foods",
+            "fr": "Caribbean Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/caribbean-foods/c/58498?navid=flyout-L3-InternationalFoods-CaribbeanFoods",
+          "children": []
+        },
+        {
+          "name": "Rice, Lentils & Beans",
+          "nameTranslations": {
+            "en": "Rice, Lentils & Beans",
+            "fr": "Rice, Lentils & Beans"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/caribbean-foods/rice-lentils-beans/c/58499?navid=flyout-L3-InternationalFoods-CaribbeanFoods-RiceLentilsBeans",
+          "children": []
+        },
+        {
+          "name": "Snacks, Cookies & Crackers",
+          "nameTranslations": {
+            "en": "Snacks, Cookies & Crackers",
+            "fr": "Snacks, Cookies & Crackers"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/caribbean-foods/snacks-cookies-crackers/c/58500?navid=flyout-L3-InternationalFoods-CaribbeanFoods-Snacks, Cookies & Crackers",
+          "children": []
+        },
+        {
+          "name": "Baking & Flour",
+          "nameTranslations": {
+            "en": "Baking & Flour",
+            "fr": "Baking & Flour"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/caribbean-foods/baking-flour/c/58501?navid=flyout-L3-InternationalFoods-CaribbeanFoods-BakingFlour",
+          "children": []
+        },
+        {
+          "name": "Spices & Seasonings",
+          "nameTranslations": {
+            "en": "Spices & Seasonings",
+            "fr": "Spices & Seasonings"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/caribbean-foods/spices-seasonings/c/58502?navid=flyout-L3-Internationalfoods-Caribbeanfoods-SpicesSeasonings",
+          "children": []
+        },
+        {
+          "name": "Shop More Caribbean Foods",
+          "nameTranslations": {
+            "en": "Shop More Caribbean Foods",
+            "fr": "Shop More Caribbean Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/caribbean-foods/c/58498?navid=flyout-L3-InternationalFoods-CaribbeanFoods-ShopMore",
+          "children": []
+        },
+        {
+          "name": "Halal Foods",
+          "nameTranslations": {
+            "en": "Halal Foods",
+            "fr": "Halal Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/halal-foods/c/58556?navid=flyout-L3-InternationalFoods-HalalFood",
+          "children": []
+        },
+        {
+          "name": "Meat",
+          "nameTranslations": {
+            "en": "Meat",
+            "fr": "Meat"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/halal-foods/meat/c/58557?navid=flyout-L3-InternationalFoods-HalalFoods-Meat",
+          "children": []
+        },
+        {
+          "name": "Deli",
+          "nameTranslations": {
+            "en": "Deli",
+            "fr": "Deli"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/halal-foods/deli/c/58559?navid=flyout-L3-InternationalFoods-HalalFoods-Deli",
+          "children": []
+        },
+        {
+          "name": "Dairy",
+          "nameTranslations": {
+            "en": "Dairy",
+            "fr": "Dairy"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/halal-foods/dairy/c/58560?navid=flyout-L3-InternationalFoods-HalalFoods-Dairy",
+          "children": []
+        },
+        {
+          "name": "Frozen Entrees",
+          "nameTranslations": {
+            "en": "Frozen Entrees",
+            "fr": "Frozen Entrees"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/halal-foods/frozen-entrees/c/58558?navid=flyout-L3-InternationalFoods-HalalFoods-FrozenEntrees",
+          "children": []
+        },
+        {
+          "name": "Middle Eastern Foods",
+          "nameTranslations": {
+            "en": "Middle Eastern Foods",
+            "fr": "Middle Eastern Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/middle-eastern-foods/c/58561?navid=flyout-L3-InternationalFoods-MiddleEasternFoods",
+          "children": []
+        },
+        {
+          "name": "Canned, Pickled Food & Olives",
+          "nameTranslations": {
+            "en": "Canned, Pickled Food & Olives",
+            "fr": "Canned, Pickled Food & Olives"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/middle-eastern-foods/canned-pickled-food-olives/c/58568?navid=flyout-L3-InternationalFoods-MiddleEasternFoods-CannedPickledFoodOlives",
+          "children": []
+        },
+        {
+          "name": "Snacks, Cookies & Crackers",
+          "nameTranslations": {
+            "en": "Snacks, Cookies & Crackers",
+            "fr": "Snacks, Cookies & Crackers"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/middle-eastern-foods/snacks-cookies-crackers/c/58563?navid=flyout-L3-InternationalFoods-MiddleEasternFoods-SnacksCookiesCrackers",
+          "children": []
+        },
+        {
+          "name": "Frozen",
+          "nameTranslations": {
+            "en": "Frozen",
+            "fr": "Frozen"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/middle-eastern-foods/frozen/c/58570?navid=flyout-L3-InternationalFoods-MiddleEasternFoods-Frozen",
+          "children": []
+        },
+        {
+          "name": "Shop More Middle Eastern Foods",
+          "nameTranslations": {
+            "en": "Shop More Middle Eastern Foods",
+            "fr": "Shop More Middle Eastern Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/middle-eastern-foods/c/58561?navid=flyout-L3-InternationalFood-MiddleEastern-ShopMore",
+          "children": []
+        },
+        {
+          "name": "Filipino Foods",
+          "nameTranslations": {
+            "en": "Filipino Foods",
+            "fr": "Filipino Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/filipino-foods/c/58812?navid=flyout-L3-InternationalFoods-FilipinoFoods",
+          "children": []
+        },
+        {
+          "name": "Rice, Noodles & Noodle Soup",
+          "nameTranslations": {
+            "en": "Rice, Noodles & Noodle Soup",
+            "fr": "Rice, Noodles & Noodle Soup"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/filipino-foods/rice-noodles-noodle-soup/c/58813?navid=flyout-L3-InternationalFoods-FilipinoFoods-RiceNoodlesNoodleSoup",
+          "children": []
+        },
+        {
+          "name": "Snacks, Cookies & Crackers",
+          "nameTranslations": {
+            "en": "Snacks, Cookies & Crackers",
+            "fr": "Snacks, Cookies & Crackers"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/filipino-foods/snacks-cookies-crackers/c/58814?navid=flyout-L3-InternationalFoods-FilipinoFoods-SnacksCookiesCrackers",
+          "children": []
+        },
+        {
+          "name": "Canned Foods",
+          "nameTranslations": {
+            "en": "Canned Foods",
+            "fr": "Canned Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/filipino-foods/canned-food/c/58816?navid=flyout-L3-InternationalFoods-FilipinoFoods-CannedFoods",
+          "children": []
+        },
+        {
+          "name": "Shop More Filipino Foods",
+          "nameTranslations": {
+            "en": "Shop More Filipino Foods",
+            "fr": "Shop More Filipino Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/filipino-foods/c/58812?navid=flyout-L3-InternationalFoods-FilipinoFoods-ShopMore",
+          "children": []
+        },
+        {
+          "name": "Latin American Foods",
+          "nameTranslations": {
+            "en": "Latin American Foods",
+            "fr": "Latin American Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/latin-american-foods/c/58680?navid=flyout-L3-InternationalFoods-LatinAmericanFoods",
+          "children": []
+        },
+        {
+          "name": "Condiments & Salsa",
+          "nameTranslations": {
+            "en": "Condiments & Salsa",
+            "fr": "Condiments & Salsa"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/latin-american-foods/condiments-salsa/c/58687?navid=flyout-L3-InternationalFoods-LatinAmericanFoods-CondimentsSalsa",
+          "children": []
+        },
+        {
+          "name": "Hot & Cold Drinks",
+          "nameTranslations": {
+            "en": "Hot & Cold Drinks",
+            "fr": "Hot & Cold Drinks"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/latin-american-foods/hot-cold-drinks/c/58685?navid=flyout-L3-InternationalFoods-LatinAmericanFoods-HotCold Drinks",
+          "children": []
+        },
+        {
+          "name": "Fruits & Vegetables",
+          "nameTranslations": {
+            "en": "Fruits & Vegetables",
+            "fr": "Fruits & Vegetables"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/latin-american-foods/fruits-vegetables/c/58690?navid=flyout-L3-InternationalFoods-LatinAmericanFoods-FruitsVegetables",
+          "children": []
+        },
+        {
+          "name": "Shop More Latin American Foods",
+          "nameTranslations": {
+            "en": "Shop More Latin American Foods",
+            "fr": "Shop More Latin American Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/latin-american-foods/c/58680?navid=flyout-L3-InternationalFoods-LatinAmericanFoods-ShopMore",
+          "children": []
+        },
+        {
+          "name": "European Foods",
+          "nameTranslations": {
+            "en": "European Foods",
+            "fr": "European Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/european-foods/c/58801?navid=flyout-L3-InternationalFoods-EuropeanFoods",
+          "children": []
+        },
+        {
+          "name": "Canned Goods",
+          "nameTranslations": {
+            "en": "Canned Goods",
+            "fr": "Canned Goods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/european-foods/canned-goods/c/58802?navid=flyout-L3-InternationalFoods-EuropeanFoods-Cannedgoods",
+          "children": []
+        },
+        {
+          "name": "Bakery & Deli",
+          "nameTranslations": {
+            "en": "Bakery & Deli",
+            "fr": "Bakery & Deli"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/european-foods/bakery-deli/c/58809?navid=flyout-L3-InternationalFoods-EuropeanFoods-BakeryDeli",
+          "children": []
+        },
+        {
+          "name": "Snacks, Cookies & Crackers",
+          "nameTranslations": {
+            "en": "Snacks, Cookies & Crackers",
+            "fr": "Snacks, Cookies & Crackers"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/european-foods/snacks-cookies-crackers/c/58804?navid=flyout-L3-InternationalFoods-EuropeanFoods-SnacksCookiesCrackers",
+          "children": []
+        },
+        {
+          "name": "Shop More European Foods",
+          "nameTranslations": {
+            "en": "Shop More European Foods",
+            "fr": "Shop More European Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/international-foods/european-foods/c/58801?navid=flyout-L3-InternationalFoods-EuropeanFoods-ShopMore",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Meat",
+      "nameTranslations": {
+        "en": "Meat",
+        "fr": "Meat"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Chicken & Turkey",
+          "nameTranslations": {
+            "en": "Chicken & Turkey",
+            "fr": "Chicken & Turkey"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/chicken-turkey/c/28214?navid=flyout-L3-chicken-and-turkey",
+          "children": []
+        },
+        {
+          "name": "Beef",
+          "nameTranslations": {
+            "en": "Beef",
+            "fr": "Beef"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/beef/c/28174?navid=flyout-L3-Beef",
+          "children": []
+        },
+        {
+          "name": "Sausages",
+          "nameTranslations": {
+            "en": "Sausages",
+            "fr": "Sausages"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/sausages/c/28170?navid=flyout-L3-sausages",
+          "children": []
+        },
+        {
+          "name": "Bacon",
+          "nameTranslations": {
+            "en": "Bacon",
+            "fr": "Bacon"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/bacon/c/59252?navid=flyout-L3-Bacon",
+          "children": []
+        },
+        {
+          "name": "Hot Dogs",
+          "nameTranslations": {
+            "en": "Hot Dogs",
+            "fr": "Hot Dogs"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/hot-dogs/c/59253?navid=flyout-L3-Hot-dogs",
+          "children": []
+        },
+        {
+          "name": "Pork & Ham",
+          "nameTranslations": {
+            "en": "Pork & Ham",
+            "fr": "Pork & Ham"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/pork/c/28215?navid=flyout-L3-Pork & Ham",
+          "children": []
+        },
+        {
+          "name": "Lamb & Veal",
+          "nameTranslations": {
+            "en": "Lamb & Veal",
+            "fr": "Lamb & Veal"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/lamb-veal/c/28171?navid=flyout-L3-Lamb-and-Veal",
+          "children": []
+        },
+        {
+          "name": "Kebabs & Marinated Meat",
+          "nameTranslations": {
+            "en": "Kebabs & Marinated Meat",
+            "fr": "Kebabs & Marinated Meat"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/kebabs-marinated-meat/c/28173?navid=flyout-L3-kebabs-and-marinated",
+          "children": []
+        },
+        {
+          "name": "Game Meat, Offals & Fowl",
+          "nameTranslations": {
+            "en": "Game Meat, Offals & Fowl",
+            "fr": "Game Meat, Offals & Fowl"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/offals-game-meat-fowl/c/28216?navid=flyout-L3-Offals-game-meat-fowl",
+          "children": []
+        },
+        {
+          "name": "Plant-Based Meat Alternatives",
+          "nameTranslations": {
+            "en": "Plant-Based Meat Alternatives",
+            "fr": "Plant-Based Meat Alternatives"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/plant-based-meat-alternatives/c/59318?navid=flyout-L3-plant-based-meat-alternatives",
+          "children": []
+        },
+        {
+          "name": "Deli Meat",
+          "nameTranslations": {
+            "en": "Deli Meat",
+            "fr": "Deli Meat"
+          },
+          "url": "https://www.maxi.ca/en/food/meat/deli-meat/c/59319?navid=flyout-L3-Meat-Deli",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Fish & Seafood",
+      "nameTranslations": {
+        "en": "Fish & Seafood",
+        "fr": "Fish & Seafood"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Shrimp",
+          "nameTranslations": {
+            "en": "Shrimp",
+            "fr": "Shrimp"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/shrimp/c/28218?navid=flyout-L3-Fish-and-Seafood-Shrimp",
+          "children": []
+        },
+        {
+          "name": "Salmon",
+          "nameTranslations": {
+            "en": "Salmon",
+            "fr": "Salmon"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/salmon/c/28217?navid=flyout-L3-Fish-and-Seafood-Salmon",
+          "children": []
+        },
+        {
+          "name": "Fish",
+          "nameTranslations": {
+            "en": "Fish",
+            "fr": "Fish"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/fish/c/28191?navid=flyout-L3-Fish-and-Seafood-Fish",
+          "children": []
+        },
+        {
+          "name": "Smoked Fish",
+          "nameTranslations": {
+            "en": "Smoked Fish",
+            "fr": "Smoked Fish"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/smoked-fish/c/28219?navid=flyout-L3-Fish-and-Seafood-Smoked-Fish",
+          "children": []
+        },
+        {
+          "name": "Seafood Appetizers",
+          "nameTranslations": {
+            "en": "Seafood Appetizers",
+            "fr": "Seafood Appetizers"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/seafood-appetizers/c/28192?navid=flyout-L3-Fish-and-Seafood-Seafood-Appetizers",
+          "children": []
+        },
+        {
+          "name": "Shellfish",
+          "nameTranslations": {
+            "en": "Shellfish",
+            "fr": "Shellfish"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/shellfish/c/28190?navid=flyout-L3-Fish-and-Seafood-Shellfish",
+          "children": []
+        },
+        {
+          "name": "Squid & Octopus",
+          "nameTranslations": {
+            "en": "Squid & Octopus",
+            "fr": "Squid & Octopus"
+          },
+          "url": "https://www.maxi.ca/en/food/fish-seafood/squid-octopus/c/28193?navid=flyout-L3-Fish-and-Seafood-Squid-and-Octopus",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Snacks, Chips & Candy",
+      "nameTranslations": {
+        "en": "Snacks, Chips & Candy",
+        "fr": "Snacks, Chips & Candy"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Chips & Snacks",
+          "nameTranslations": {
+            "en": "Chips & Snacks",
+            "fr": "Chips & Snacks"
+          },
+          "url": "https://www.maxi.ca/en/food/snacks-chips-candy/chips-snacks/c/28250?navid=flyout-L3-chips-and-snacks",
+          "children": []
+        },
+        {
+          "name": "Candy & Chocolate",
+          "nameTranslations": {
+            "en": "Candy & Chocolate",
+            "fr": "Candy & Chocolate"
+          },
+          "url": "https://www.maxi.ca/en/food/snacks-chips-candy/candy-chocolate/c/28249?navid=flyout-L3-candy-and-chocolate",
+          "children": []
+        },
+        {
+          "name": "Crackers & Cookies",
+          "nameTranslations": {
+            "en": "Crackers & Cookies",
+            "fr": "Crackers & Cookies"
+          },
+          "url": "https://www.maxi.ca/en/food/snacks-chips-candy/crackers-cookies/c/28242?navid=flyout-L3-Crackers-and-cookies",
+          "children": []
+        },
+        {
+          "name": "Snack Cakes",
+          "nameTranslations": {
+            "en": "Snack Cakes",
+            "fr": "Snack Cakes"
+          },
+          "url": "https://www.maxi.ca/en/food/snacks-chips-candy/snack-cakes/c/59210?navid=flyout-L3-food-snack-cakes",
+          "children": []
+        },
+        {
+          "name": "Bulk Nuts and Candy",
+          "nameTranslations": {
+            "en": "Bulk Nuts and Candy",
+            "fr": "Bulk Nuts and Candy"
+          },
+          "url": "https://www.maxi.ca/en/food/pantry/bulk/c/57088?navid=flyout-L3-Pantry-Bulk",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "nameTranslations": {
+        "en": "Drinks",
+        "fr": "Drinks"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Juice",
+          "nameTranslations": {
+            "en": "Juice",
+            "fr": "Juice"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/juice/c/28230?navid=flyout-L3-Drinks-Juice",
+          "children": []
+        },
+        {
+          "name": "Coffee",
+          "nameTranslations": {
+            "en": "Coffee",
+            "fr": "Coffee"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/coffee/c/28228?navid=flyout-L3-Drinks-Coffee",
+          "children": []
+        },
+        {
+          "name": "Tea & Hot Drinks",
+          "nameTranslations": {
+            "en": "Tea & Hot Drinks",
+            "fr": "Tea & Hot Drinks"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/tea-hot-drinks/c/28234?navid=flyout-L3-Drinks-Tea-and-Hot-Drinks",
+          "children": []
+        },
+        {
+          "name": "Soft Drinks",
+          "nameTranslations": {
+            "en": "Soft Drinks",
+            "fr": "Soft Drinks"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/soft-drinks/c/28231?navid=flyout-L3-Drinks-Soft-Drinks",
+          "children": []
+        },
+        {
+          "name": "Water",
+          "nameTranslations": {
+            "en": "Water",
+            "fr": "Water"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/water/c/28235?navid=flyout-L3-Drinks-Water",
+          "children": []
+        },
+        {
+          "name": "Soy, Rice & Almond Drinks",
+          "nameTranslations": {
+            "en": "Soy, Rice & Almond Drinks",
+            "fr": "Soy, Rice & Almond Drinks"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/soy-rice-almond-drinks/c/28232?navid=flyout-L3-Drinks-Soy-Rice-and-Almond-Drinks",
+          "children": []
+        },
+        {
+          "name": "Sports & Energy",
+          "nameTranslations": {
+            "en": "Sports & Energy",
+            "fr": "Sports & Energy"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/sports-energy/c/28233?navid=flyout-L3-Drinks-Sports-and-Energy",
+          "children": []
+        },
+        {
+          "name": "Drink Mixes",
+          "nameTranslations": {
+            "en": "Drink Mixes",
+            "fr": "Drink Mixes"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/drink-mixes/c/28229?navid=flyout-L3-Drinks-Drink-Mixes",
+          "children": []
+        },
+        {
+          "name": "Non-alcoholic drinks",
+          "nameTranslations": {
+            "en": "Non-alcoholic drinks",
+            "fr": "Non-alcoholic drinks"
+          },
+          "url": "https://www.maxi.ca/en/food/drinks/non-alcoholic-drinks/c/29718?navid=flyout-L3-non-alcoholic-drinks",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Frozen Food",
+      "nameTranslations": {
+        "en": "Frozen Food",
+        "fr": "Frozen Food"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Ice Cream & Desserts",
+          "nameTranslations": {
+            "en": "Ice Cream & Desserts",
+            "fr": "Ice Cream & Desserts"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/ice-cream-desserts/c/28240?navid=flyout-L3-Frozen-Ice-Cream-and-Desserts",
+          "children": []
+        },
+        {
+          "name": "Frozen Fruit & Vegetables",
+          "nameTranslations": {
+            "en": "Frozen Fruit & Vegetables",
+            "fr": "Frozen Fruit & Vegetables"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/fruit-vegetables/c/28162?navid=flyout-L3-Frozen-Fruit-and-Vegetables",
+          "children": []
+        },
+        {
+          "name": "Frozen Meat and Seafood",
+          "nameTranslations": {
+            "en": "Frozen Meat and Seafood",
+            "fr": "Frozen Meat and Seafood"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/frozen-meat-seafood/c/57003?navid=flyout-L3-frozen-frozen-meat-and-seafood",
+          "children": []
+        },
+        {
+          "name": "Frozen Meals, Entrees & Sides",
+          "nameTranslations": {
+            "en": "Frozen Meals, Entrees & Sides",
+            "fr": "Frozen Meals, Entrees & Sides"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/meals-entrees-sides/c/28163?navid=flyout-L3-Frozen-Meals-Entrees-and-Sides",
+          "children": []
+        },
+        {
+          "name": "Frozen Pizza",
+          "nameTranslations": {
+            "en": "Frozen Pizza",
+            "fr": "Frozen Pizza"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/frozen-pizza/c/28165?navid=flyout-L3-Frozen-Frozen-Pizza",
+          "children": []
+        },
+        {
+          "name": "Frozen Appetizers & Snacks",
+          "nameTranslations": {
+            "en": "Frozen Appetizers & Snacks",
+            "fr": "Frozen Appetizers & Snacks"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/appetizers-snacks/c/28238?navid=flyout-L3-frozen-appetizers-and-snacks",
+          "children": []
+        },
+        {
+          "name": "Frozen Bakery & Breakfast",
+          "nameTranslations": {
+            "en": "Frozen Bakery & Breakfast",
+            "fr": "Frozen Bakery & Breakfast"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/bakery-breakfast-/c/28164?navid=flyout-L3-Frozen-Bakery-and-Breakfast",
+          "children": []
+        },
+        {
+          "name": "Frozen Beverages & Ice",
+          "nameTranslations": {
+            "en": "Frozen Beverages & Ice",
+            "fr": "Frozen Beverages & Ice"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/beverages-ice/c/28239?navid=flyout-L3-Frozen-Beverages-and-Ice",
+          "children": []
+        },
+        {
+          "name": "Frozen Meatless Alternatives",
+          "nameTranslations": {
+            "en": "Frozen Meatless Alternatives",
+            "fr": "Frozen Meatless Alternatives"
+          },
+          "url": "https://www.maxi.ca/en/food/frozen/meatless-alternatives/c/28241?navid=flyout-L3-Frozen-Meatless-Alternatives",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Natural and Organic",
+      "nameTranslations": {
+        "en": "Natural and Organic",
+        "fr": "Natural and Organic"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Cereals, Spreads & Syrups",
+          "nameTranslations": {
+            "en": "Cereals, Spreads & Syrups",
+            "fr": "Cereals, Spreads & Syrups"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/cereals-spreads-syrups/c/59260?navid=flyout-L3-NV-cereals-spreads-syrups",
+          "children": []
+        },
+        {
+          "name": "Bakery",
+          "nameTranslations": {
+            "en": "Bakery",
+            "fr": "Bakery"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/bakery/c/59271?navid=flyout-L3-NV-bakery",
+          "children": []
+        },
+        {
+          "name": "Condiments, Sauces and Oils",
+          "nameTranslations": {
+            "en": "Condiments, Sauces and Oils",
+            "fr": "Condiments, Sauces and Oils"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/condiments-sauces-and-oils/c/29713?navid=flyout-L3-NV-condiments-sauces-and-oils",
+          "children": []
+        },
+        {
+          "name": "Snacks, Chips & Candy",
+          "nameTranslations": {
+            "en": "Snacks, Chips & Candy",
+            "fr": "Snacks, Chips & Candy"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/snacks-chips-candy/c/29714?navid=flyout-L3-NV-snacks-chips-candy",
+          "children": []
+        },
+        {
+          "name": "Dairy and Eggs",
+          "nameTranslations": {
+            "en": "Dairy and Eggs",
+            "fr": "Dairy and Eggs"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/dairy-and-eggs/c/59391?navid=flyout-L3-NV-dairy-eggs",
+          "children": []
+        },
+        {
+          "name": "Drinks",
+          "nameTranslations": {
+            "en": "Drinks",
+            "fr": "Drinks"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/drinks/c/29717?navid=flyout-L3-nv-drinks",
+          "children": []
+        },
+        {
+          "name": "Frozen Foods",
+          "nameTranslations": {
+            "en": "Frozen Foods",
+            "fr": "Frozen Foods"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/frozen-foods/c/59302?navid=flyout-L3-NV-frozen-foods",
+          "children": []
+        },
+        {
+          "name": "Baking and Spices",
+          "nameTranslations": {
+            "en": "Baking and Spices",
+            "fr": "Baking and Spices"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/baking-and-spices/c/29924?navid=flyout-L3-nv-baking-spices",
+          "children": []
+        },
+        {
+          "name": "Canned",
+          "nameTranslations": {
+            "en": "Canned",
+            "fr": "Canned"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/canned/c/29925?navid=flyout-L3-nv-canned",
+          "children": []
+        },
+        {
+          "name": "Pasta and Side Dishes",
+          "nameTranslations": {
+            "en": "Pasta and Side Dishes",
+            "fr": "Pasta and Side Dishes"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/pasta-and-side-dishes/c/29927?navid=flyout-L3-NV-pasta-and-side-dishes",
+          "children": []
+        },
+        {
+          "name": "Bars and Protein",
+          "nameTranslations": {
+            "en": "Bars and Protein",
+            "fr": "Bars and Protein"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/bars-and-protein/c/59281?navid=flyout-L3-NV-bars-protien",
+          "children": []
+        },
+        {
+          "name": "Health & Beauty",
+          "nameTranslations": {
+            "en": "Health & Beauty",
+            "fr": "Health & Beauty"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/health-beauty/c/59320?navid=flyout-L3-NV-health-beauty",
+          "children": []
+        },
+        {
+          "name": "Household Supplies",
+          "nameTranslations": {
+            "en": "Household Supplies",
+            "fr": "Household Supplies"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/household-supplies/c/59339?navid=flyout-L3-NV-household-supplies",
+          "children": []
+        },
+        {
+          "name": "Vitamins, Minerals and Supplements",
+          "nameTranslations": {
+            "en": "Vitamins, Minerals and Supplements",
+            "fr": "Vitamins, Minerals and Supplements"
+          },
+          "url": "https://www.maxi.ca/en/food/natural-and-organic/vitamins-minerals-and-supplements/c/59374?navid=flyout-L3-NV-vitamins-minerals-supplements",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Deli",
+      "nameTranslations": {
+        "en": "Deli",
+        "fr": "Deli"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Deli Meat",
+          "nameTranslations": {
+            "en": "Deli Meat",
+            "fr": "Deli Meat"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/deli-meat/c/28201?navid=flyout-L3-Deli-Deli-Meat",
+          "children": []
+        },
+        {
+          "name": "Deli Cheese",
+          "nameTranslations": {
+            "en": "Deli Cheese",
+            "fr": "Deli Cheese"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/deli-cheese/c/28202?navid=flyout-L3-XP-455-Deli-Deli-Cheese",
+          "children": []
+        },
+        {
+          "name": "Antipasto, Dips & Spreads",
+          "nameTranslations": {
+            "en": "Antipasto, Dips & Spreads",
+            "fr": "Antipasto, Dips & Spreads"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/antipasto-dips-spreads/c/28203?navid=flyout-L3-XP-455-Deli-Antipasto-Dips-and-Spreads",
+          "children": []
+        },
+        {
+          "name": "Crackers & Condiments",
+          "nameTranslations": {
+            "en": "Crackers & Condiments",
+            "fr": "Crackers & Condiments"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/crackers-condiments/c/28158?navid=flyout-L3-XP-455-Deli-Crackers-and-Condiments",
+          "children": []
+        },
+        {
+          "name": "Vegan & Vegetarian",
+          "nameTranslations": {
+            "en": "Vegan & Vegetarian",
+            "fr": "Vegan & Vegetarian"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/vegan-vegetarian/c/28204?navid=flyout-L3-XP-455-Deli-Vegan-and-Vegetarian",
+          "children": []
+        },
+        {
+          "name": "Lunch & Snack Kits",
+          "nameTranslations": {
+            "en": "Lunch & Snack Kits",
+            "fr": "Lunch & Snack Kits"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/lunch-snack-kits/c/57039?navid=flyout-L3-XP-455-lunch-and-snack-kits",
+          "children": []
+        },
+        {
+          "name": "Party Trays",
+          "nameTranslations": {
+            "en": "Party Trays",
+            "fr": "Party Trays"
+          },
+          "url": "https://www.maxi.ca/en/food/deli/party-trays/c/28212?navid=flyout-L3-XP-455-Deli-Party-Trays",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Bakery",
+      "nameTranslations": {
+        "en": "Bakery",
+        "fr": "Bakery"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Bread",
+          "nameTranslations": {
+            "en": "Bread",
+            "fr": "Bread"
+          },
+          "url": "https://www.maxi.ca/en/food/bakery/bread/c/28251?navid=flyout-L3-Bakery-Bread",
+          "children": []
+        },
+        {
+          "name": "Buns & Rolls",
+          "nameTranslations": {
+            "en": "Buns & Rolls",
+            "fr": "Buns & Rolls"
+          },
+          "url": "https://www.maxi.ca/en/food/bakery/buns-rolls/c/28147?navid=flyout-L3-Bakery-Buns-and-Rolls",
+          "children": []
+        },
+        {
+          "name": "Cookies, Muffins & Desserts",
+          "nameTranslations": {
+            "en": "Cookies, Muffins & Desserts",
+            "fr": "Cookies, Muffins & Desserts"
+          },
+          "url": "https://www.maxi.ca/en/food/bakery/cookies-muffins-desserts/c/28148?navid=flyout-L3-Bakery-Cookies-Muffins-and-Desserts",
+          "children": []
+        },
+        {
+          "name": "Bagels, Croissants & English Muffins",
+          "nameTranslations": {
+            "en": "Bagels, Croissants & English Muffins",
+            "fr": "Bagels, Croissants & English Muffins"
+          },
+          "url": "https://www.maxi.ca/en/food/bakery/bagels-croissants-english-muffins/c/28149?navid=flyout-L3-Bakery-Bagels-Croissants-English-Muffins",
+          "children": []
+        },
+        {
+          "name": "Wraps, Flatbread & Pizza Crust",
+          "nameTranslations": {
+            "en": "Wraps, Flatbread & Pizza Crust",
+            "fr": "Wraps, Flatbread & Pizza Crust"
+          },
+          "url": "https://www.maxi.ca/en/food/bakery/wraps-flatbread-pizza-crust/c/28150?navid=flyout-L3-Bakery-Wraps-Flatbread-Pizza-Crust",
+          "children": []
+        },
+        {
+          "name": "Cakes",
+          "nameTranslations": {
+            "en": "Cakes",
+            "fr": "Cakes"
+          },
+          "url": "https://www.maxi.ca/en/food/bakery/cakes/c/59494?navid=flyout-L3-Bakery-Cakes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Prepared Meals",
+      "nameTranslations": {
+        "en": "Prepared Meals",
+        "fr": "Prepared Meals"
+      },
+      "url": "",
+      "children": [
+        {
+          "name": "Fresh Pasta & Sauce",
+          "nameTranslations": {
+            "en": "Fresh Pasta & Sauce",
+            "fr": "Fresh Pasta & Sauce"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/fresh-pasta-sauce/c/28210?navid=flyout-L3-Prepared-Meals-Fresh-Pasta-and-Sauce",
+          "children": []
+        },
+        {
+          "name": "Entrees & Appetizers",
+          "nameTranslations": {
+            "en": "Entrees & Appetizers",
+            "fr": "Entrees & Appetizers"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/entrees-appetizers/c/28205?navid=flyout-L3-Prepared-Meals-entrees-and-appetizers",
+          "children": []
+        },
+        {
+          "name": "Salads & Soups",
+          "nameTranslations": {
+            "en": "Salads & Soups",
+            "fr": "Salads & Soups"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/salads-soups/c/28167?navid=flyout-L3-Prepared-Meals-Salads-and-Soups",
+          "children": []
+        },
+        {
+          "name": "Sandwiches",
+          "nameTranslations": {
+            "en": "Sandwiches",
+            "fr": "Sandwiches"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/sandwiches/c/28208?navid=flyout-L3-Prepared-Meals-Sandwiches",
+          "children": []
+        },
+        {
+          "name": "Sushi",
+          "nameTranslations": {
+            "en": "Sushi",
+            "fr": "Sushi"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/sushi/c/28209?navid=flyout-L3-Prepared-Meals-Sushi",
+          "children": []
+        },
+        {
+          "name": "Fries & Sides",
+          "nameTranslations": {
+            "en": "Fries & Sides",
+            "fr": "Fries & Sides"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/fries-sides/c/28168?navid=flyout-L3-Prepared-Meals-fries-and-Sides",
+          "children": []
+        },
+        {
+          "name": "Pizza",
+          "nameTranslations": {
+            "en": "Pizza",
+            "fr": "Pizza"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/pizza/c/28211?navid=flyout-L3-Prepared-Meals-Pizza",
+          "children": []
+        },
+        {
+          "name": "Quiches & Pies",
+          "nameTranslations": {
+            "en": "Quiches & Pies",
+            "fr": "Quiches & Pies"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/quiches-pies/c/28206?navid=flyout-L3-Prepared-Meals-Quiches-and-Pies",
+          "children": []
+        },
+        {
+          "name": "Snacks & Dips",
+          "nameTranslations": {
+            "en": "Snacks & Dips",
+            "fr": "Snacks & Dips"
+          },
+          "url": "https://www.maxi.ca/en/food/prepared-meals/snacks-dips/c/57043?navid=flyout-L3-prepared-meals-snacks-and-dips",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Floral Shop",
+      "nameTranslations": {
+        "en": "Floral Shop",
+        "fr": "Floral Shop"
+      },
+      "url": "",
+      "children": []
+    }
+  ],
+  "products": [],
+  "scrapedAt": "2025-12-10T00:11:42.279Z",
+  "totalProducts": 0,
+  "totalCategories": 163,
+  "storeName": "MAXI & CIE PIERREFONDS SAINT-JEAN"
+}
